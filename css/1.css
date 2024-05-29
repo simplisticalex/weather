@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100..900&family=Pixelify+Sans:wght@700&display=swap");
+body {
+  background-color: #e0e0e0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin-left: 20%;
+  width: 1425px;
+}
+#header > * {
+  margin: 17px 10px 44px;
+  padding: 0;
+  color: #fa6901;
+  font-family: Inter;
+  font-size: 30px;
+}
+#header a {
+  text-decoration: none;
+  color: #fa6901;
+}
+#header a:hover {
+  color: #e06004;
+}
+#header h1 {
+  margin-left: 3%;
+  font-size: 30px;
+}
+#header #pogoda, #header #karta, #header #novosti {
+  margin-right: 50px;
+  font-size: 25px;
+}
+#header .header_rod {
+  height: 40px;
+}
+#header #black_weather {
+  color: #000;
+}
+
+#navbar {
+  background-color: #fa6901;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+  margin-left: 20%;
+  width: 1405px;
+  border: none;
+  border-radius: 5px;
+}
+#navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #e0e0e0;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+}
+#navbar input {
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  height: 30px;
+  text-align: center;
+  color: #fa6901;
+  font-size: 20px;
+  outline: 0;
+}
+#navbar input::placeholder {
+  color: #fa6901;
+}
+#navbar button {
+  border-radius: 15px;
+  height: 100%;
+  background-color: #fa6901;
+  border: 0;
+  margin-left: 10px;
+}
+#navbar button:hover {
+  background-color: #e06004;
+}
+
+article {
+  margin-left: 20%;
+}
+
+#perviy, #vtoroy, #tretiy {
+  height: 165px;
+  width: 437px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#perviy, #tretiy {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+#perviy {
+  margin-right: 20px;
+}
+
+#vtoroy {
+  border-bottom: none;
+  height: 185px;
+  position: relative;
+  top: 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+#tretiy {
+  margin-left: 20px;
+}
+
+#flex-container, #flex-container2 {
+  display: flex;
+  margin-left: 37px;
+  align-items: center;
+}
+
+#chetv {
+  width: 1351.7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  border-top: none;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.chetv-inner {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-top: 90px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  height: 143px;
+}
+.chetv-inner img {
+  width: 136px;
+  height: 130px;
+}
+
+#chetv .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-row .chetv-inner {
+  margin-bottom: 120px;
+  width: 166px;
+  height: 50px;
+  margin-top: 0;
+  background-color: #d9d9d9;
+}
+
+#combined {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+  font-weight: 550;
+  font-family: Inter;
+  padding-left: 10px;
+}
+.card > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card .card-temp {
+  font-size: 30px;
+}
+.card .card-time {
+  color: #00bcff;
+}
+.card #weather-icon {
+  max-width: 100%;
+  height: auto;
+}
+.card #humid {
+  padding-top: 140px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+hr {
+  height: 1px;
+  margin-top: 100px;
+  margin-left: 20%;
+  width: 1425px;
+  background-color: #fa6901;
+}
+
+#last {
+  margin-right: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  body {
+    background-color: #e0e0e0;
+  }
+  #header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+  }
+  #navbar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 883px;
+  }
+  article {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+  }
+  #perviy, #vtoroy, #tretiy {
+    height: 100px;
+    width: 264px;
+    margin-top: -30px;
+  }
+  #perviy img, #vtoroy img, #tretiy img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+  #perviy .text, #vtoroy .text, #tretiy .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #vtoroy {
+    height: 120px;
+    top: 10px;
+  }
+  #flex-container, #flex-container2 {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  #chetv {
+    width: 830px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+  }
+  .chetv-inner {
+    width: 80px;
+    margin-top: 40px;
+    height: 120px;
+  }
+  .chetv-inner img {
+    width: 100px;
+    height: 96px;
+  }
+  .bottom-row .chetv-inner {
+    height: 30px;
+  }
+  .card {
+    font-size: 18px;
+  }
+  .card .card-temp {
+    font-size: 20px;
+  }
+  .card #humid {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  hr {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+  }
+  #last {
+    margin-top: -20px;
+  }
+}
+footer {
+  text-align: center;
+}/*# sourceMappingURL=1.css.map */

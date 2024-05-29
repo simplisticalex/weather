@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@100..900&family=Pixelify+Sans:wght@700&display=swap');
+
+// Основные стили
+body {
+  background-color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1425px;
+
+  > * {
+    margin: 17px 10px 44px;
+    padding: 0;
+    color: #fa6901;
+    font-family: Inter;
+    font-size: 30px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fa6901;
+
+    &:hover {
+      color: #e06004;
+    }
+  }
+
+  h1 {
+    margin-left: 3%;
+    font-size: 30px;
+  }
+
+  #pogoda, #karta, #novosti {
+    margin-right: 50px;
+    font-size: 25px;
+  }
+
+  .header_rod {
+    height: 40px;
+  }
+
+  #black_weather {
+    color: #000;
+  }
+}
+
+#navbar {
+  background-color: #fa6901;
+  border: 1px solid;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1405px;
+  border: none;
+  border-radius: 5px;
+
+  a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  input {
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    height: 30px;
+    text-align: center;
+    color: #fa6901;
+    font-size: 20px;
+    outline: 0;
+
+    &::placeholder {
+      color: #fa6901;
+    }
+  }
+
+  button {
+    border-radius: 15px;
+    height: 100%;
+    background-color: #fa6901;
+    border: 0;
+    margin-left: 10px;
+
+    &:hover {
+      background-color: #e06004;
+    }
+  }
+}
+
+article {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1425px;
+}
+
+#perviy, #vtoroy, #tretiy {
+  height: 165px;
+  width: 437px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #ffff;
+}
+
+#perviy, #tretiy {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+#perviy {
+  margin-right: 20px;
+}
+
+#vtoroy {
+  border-bottom: none;
+  height: 185px;
+  position: relative;
+  top: 10px;
+  border-radius: 15px 15px 0 0;
+}
+
+#tretiy {
+  margin-left: 20px;
+}
+
+#flex-container, #flex-container2 {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  width: 90%;
+  max-width: 1425px;
+}
+
+#chetv {
+  width: 90%;
+  max-width: 1351.7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 600px;
+  border-top: none;
+  background-color: #ffff;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.chetv-inner {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  margin-top: 90px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 20px;
+  height: 143px;
+
+  img {
+    width: 136px;
+    height: 130px;
+  }
+}
+
+#chetv .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-row .chetv-inner {
+  margin-bottom: 120px;
+  width: 166px;
+  height: 50px;
+  margin-top: 0;
+  background-color: #d9d9d9;
+}
+
+#combined {
+  display: flex;
+  flex-direction: column;
+  width: 28%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  font-size: 23px;
+  font-weight: 550;
+  font-family: Inter;
+  padding-left: 10px;
+
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card-temp {
+    font-size: 30px;
+  }
+
+  .card-time {
+    color: #00bcff;
+  }
+
+  #weather-icon {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #humid {
+    margin-top: 20px; // Добавлено для отступа сверху
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+hr {
+  height: 1px;
+  margin: 100px auto 0;
+  width: 90%;
+  max-width: 1425px;
+  background-color: #fa6901;
+}
+
+#last {
+  margin-right: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+// Средние экраны (планшеты)
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: #e0e0e0;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  article {
+    margin: 0;
+    width: 100%;
+  }
+
+  #perviy, #vtoroy, #tretiy {
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #flex-container, #flex-container2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #chetv {
+    width: 100%;
+    height: auto;
+  }
+
+  .chetv-inner {
+    width: 80px;
+    margin-top: 40px;
+    height: 120px;
+
+    img {
+      width: 100px;
+      height: 96px;
+    }
+  }
+
+  .bottom-row .chetv-inner {
+    height: 30px;
+  }
+
+  .card {
+    font-size: 18px;
+
+    .card-temp {
+      font-size: 20px;
+    }
+
+    #humid {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  }
+
+  hr {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  #last {
+    margin-top: -20px;
+  }
+}
+
+// Маленькие экраны (мобильные устройства)
+@media (max-width: 767px) {
+  body {
+    background-color: #e0e0e0;
+  }
+
+  #header {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+
+    > * {
+      margin: 10px 0;
+      font-size: 20px;
+    }
+
+    h1 {
+      margin-left: 0;
+    }
+
+    #pogoda, #karta, #novosti {
+      margin-right: 0;
+      font-size: 18px;
+    }
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+
+    a {
+      margin: 10px 0;
+    }
+
+    input {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+
+  article {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  #perviy, #vtoroy, #tretiy {
+    height: auto;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  #flex-container, #flex-container2 {
+    flex-direction: column;
+    align-items: stretch;
+    margin: 10px 0;
+  }
+
+  #chetv {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .chetv-inner {
+    width: 100%;
+    margin: 10px 0;
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .bottom-row .chetv-inner {
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    font-size: 16px;
+
+    .card-temp {
+      font-size: 18px;
+    }
+
+    #humid {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+  }
+
+  hr {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  #last {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+}
+
+footer {
+  text-align: center;
+}
