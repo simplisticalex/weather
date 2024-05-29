@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="3.css">
+   
+</head>
+<body>
+    <header>
+        <div id="header">
+            <h1 id="Weather">Wea<span id="black_weather">ther</span></h1>
+            <svg width="10" height="100" xmlns="http://www.w3.org/2000/svg" class="header_rod">
+                <rect width="2" height="80" fill="black"/>
+            </svg>
+            <h2 id="pogoda"><a href="1.html">Погода</a></h2>
+            <h2 id="novosti"><a href="https://news.google.com/home?hl=ru&gl=RU&ceid=RU:ru">Новости</a></h2>
+        </div>
+    </header>
+    <nav>
+        <div id="navbar">
+            <form action="/login" id="form" method="post">
+            <input type="search" id="input" placeholder="Город"></form>            
+            <button><a href="1.html" id="today">Сегодня</a></button>
+            <button><a href="2.html" id="tomorrow">Завтра</a></button>
+            <button><a href="3.html" id="Week">Неделя</a></button>
+        </div>
+    </nav>
+    <br>
+    <br id="br">
+    <!-- <article id="article">
+        /*<div id="flex-container">
+            <div id="perviy">
+                <div class="card">
+                    <div class="card-time">Сейчас</div>
+                    <div class="card-temp">14°C</div>
+                    <div class="card-weather">Ясно</div>
+                </div>
+                <img id="weather-icon" src="pictures/day/sunny.png" alt="sunny">
+            </div>
+            <div id="vtoroy">
+                <div class="card">
+                    <div class="card-time2">Пт, 5 апреля</div>
+                    <div class="card-temp">15°C</div>
+                    <div class="card-weather">Облачно</div>
+                </div>
+                <img id="weather-icon" src="pictures/day/sunny.png" alt="sunny">
+            </div>
+            <div id="tretiy">
+                <div class="card">
+                    <div class="card-time">Сб, 6 апреля</div>
+                    <div class="card-temp">8°C</div>
+                    <div class="card-weather">Дождь</div>
+                </div>
+                <img id="weather-icon" src="pictures/sunny.png" alt="sunny">
+            </div>
+        </div>
+        <div id="flex-container2">
+            <div id="chetv">
+                <div class="row top-row">
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 0.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 3.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 6.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 9.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 12.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 15.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 18.00</div>
+                    <div class="chetv-inner"><img src="pictures/sunny.png" alt="sunny"> 21.00</div>
+                </div>
+                <div id="humid">Отноительная влажность, %</div>
+                
+                <div class="row bottom-row">
+                    <div class="chetv-inner" >79</div>
+                    <div class="chetv-inner" >84</div>
+                    <div class="chetv-inner" >79</div>
+                    <div class="chetv-inner" >61</div>
+                    <div class="chetv-inner" >45</div>
+                    <div class="chetv-inner" >38</div>
+                    <div class="chetv-inner" >35</div>
+                    <div class="chetv-inner" >51</div>
+                </div>
+            </div>
+        </div>
+    </article> -->
+    <footer>
+        <hr>
+        <br>
+        <div id="last">Погода в Минске на сегодня предоставлена исключительно для личного некоммерческого использования.</div>
+    </footer>
+
+    <script src="third.js" type="module"></script>
+    <script src="conditions.js" type="module"></script>
+
+</body>
+</html>
